@@ -13,6 +13,12 @@ public struct HTMLNode: HTML {
   public var tag: String
   public var child: HTML?
   public var inline = false
+  
+  public init(tag: String, child: HTML?, inline: Bool = false) {
+    self.tag = tage
+    self.child = child
+    self.inline = inline
+  }
 
   public func getTag() -> String? {
     return self.tag

@@ -15,7 +15,7 @@ public struct HTMLNode: HTML {
   public var inline = false
   
   public init(tag: String, child: HTML?, inline: Bool = false) {
-    self.tag = tage
+    self.tag = tag
     self.child = child
     self.inline = inline
   }

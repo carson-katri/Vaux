@@ -9,10 +9,10 @@ import Foundation
 
 /// Represents an HTML tag like `<div>{{content}}</div>`, with a tag and an
 /// optional HTML child.
-struct HTMLNode: HTML {
-  var tag: String
-  var child: HTML?
-  var inline = false
+public struct HTMLNode: HTML {
+  public var tag: String
+  public var child: HTML?
+  public var inline = false
 
   func getTag() -> String? {
     return self.tag

@@ -70,10 +70,10 @@ public class HTMLOutputStream {
       } else { // Otherwise
         for c in token {
           switch c {
-          case "\"": write("&quot;")
+          /*case "\"": write("&quot;")
           case "&": write("&amp;")
           case "<": write("&lt;")
-          case ">": write("&gt;")
+          case ">": write("&gt;")*/
           default: write(String(c))
           }
         }
